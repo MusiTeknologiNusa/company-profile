@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "pre-deploy": "next start && next export",
+    "pre-deploy": "next build && next export",
     "deploy": "serve ./out",
     "deploy:dev": "yarn build && cross-env NODE_ENV=development node ssr-server.js",
     "deploy:prod": "yarn build && cross-env NODE_ENV=production node ssr-server.js"
