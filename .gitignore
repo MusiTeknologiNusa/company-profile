@@ -1,7 +1,8 @@
+out
 node_modules
 .next
 
 .vscode
 
-.env.development
-.env.production
+# .env.development
+# .env.production
