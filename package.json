@@ -1,0 +1,30 @@
+{
+  "name": "nextjs-starter",
+  "version": "1.0.0",
+  "author": "Azhary Arliansyah",
+  "main": "ssh-server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node ssr-server.js",
+    "build": "next build",
+    "start": "next start",
+    "deploy:dev": "yarn build && cross-env NODE_ENV=development node ssr-server.js",
+    "deploy:prod": "yarn build && cross-env NODE_ENV=production node ssr-server.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "firebase": "^7.14.5",
+    "next": "^9.1.7",
+    "next-redux-wrapper": "^3.0.0-alpha.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.4.6"
+  }
+}
