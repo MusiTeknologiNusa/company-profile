@@ -23,7 +23,7 @@ class App extends React.Component {
         return (
             <div>
                 <div className="p-4 shadow rounded bg-white">
-                    <h1 className="text-purple-500 leading-normal">Next.js</h1>
+                    <h1 className="text-purple-500 leading-normal">Musi Teknologi Nusa</h1>
                     <p className="text-gray-500">with Tailwind CSS</p>
                 </div>
                 <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => this.props.dispatch(incrementCounter())}>Increment</button>
