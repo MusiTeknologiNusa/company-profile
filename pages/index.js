@@ -17,6 +17,7 @@ class App extends React.Component {
 
     componentDidMount() {
         this.props.dispatch(fetchUsers(1));
+        // test PR
     }
 
     render() {
