@@ -3,5 +3,95 @@
 @tailwind utilities;
 
 body {
-    @apply bg-blue-500 p-12;
+    background: rgb(224,224,224);
+    background: linear-gradient(357deg, rgba(224,224,224,1) 0%, rgba(237,237,237,1) 15%, rgba(241,240,240,1) 36%, rgba(255,255,255,1) 100%);
+}
+
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: Rubik-Bold;
+    src: url(Rubik-Bold.ttf);
+}
+
+.text-muten{
+    font-family: Rubik-Regular;
+    color: #4f5665;
+    
+}
+
+.navbar-text{
+    font-size: 16px;
+}
+
+.main-text{
+    font-family: Rubik-Bold;
+    color: #0b132a;
+    line-height: 70px;
+    font-size: 40px;
+}
+
+.sec-text{
+    font-family: Rubik-Medium;
+    color: #0b132a;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.third-text{
+    font-family: Rubik-Medium;
+    font-size: 18px;
+    color: #4f5665;
+    line-height: 30px;
+}
+
+.primarybutton{
+    width: 250px;
+    height: 60px;
+    background-color: #ab4693;
+    border-radius: 10px;
+    box-shadow: 5px 1px 18px #ab4693;
+}
+
+.fontjobs{
+    font-family: Rubik-Bold;
+    color:#ab4693;
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.purple{
+    color:#ab4693;
+}
+
+.fourth-text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #4f5665;
+    font-family: Rubik-Regular;
+}
+
+.list-text{
+    height: 30px;
+    font-size: 14px;
+    color : #4f5665;
+    font-family: Rubik-Regular;
+}
+
+.footer-text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #4f5665;
+    font-family: Rubik-Regular;
+}
+
+.bord-10{
+    border-radius: 10px;
 }
