@@ -32,6 +32,9 @@ module.exports = {
       },
       borderRadius: {
         default: '10px'
+      },
+      width: {
+        'abc': '1000px'
       }
     },
   },
