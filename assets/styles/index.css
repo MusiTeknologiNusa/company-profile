@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background: rgb(224,224,224);
-    background: linear-gradient(357deg, rgba(224,224,224,1) 0%, rgba(237,237,237,1) 15%, rgba(241,240,240,1) 36%, rgba(255,255,255,1) 100%);
-}
-
 @font-face {
     font-family: Rubik-Regular;
     src: url(Rubik-Regular.ttf);
@@ -21,8 +16,12 @@ body {
     src: url(Rubik-Bold.ttf);
 }
 
+body {
+    /* apply default styles for body */
+    @apply .font-rubik .text-default .bg-gd-default;
+}
+
 .text-muten{
-    font-family: Rubik-Regular;
     color: #4f5665;
     
 }

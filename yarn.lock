@@ -6478,6 +6478,13 @@ symbol-observable@^1.2.0:
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
 
+tailwindcss-plugins@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-plugins/-/tailwindcss-plugins-0.3.0.tgz#20ec0192a0681c4e2efbb6e5654b767bea388e94"
+  integrity sha512-B3zEQWBpD6WqY97gw7nIXYgYp6E/Z48M2dQDx8RHdaSqVNzzAMOkjvbqDjyckqYJu1xGqsMQuiVXxjoodqvKfQ==
+  dependencies:
+    lodash "^4.17.11"
+
 tailwindcss@^1.4.6:
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.4.6.tgz#17b37166ccda08d7e7f9ca995ea48ce1e0089700"
