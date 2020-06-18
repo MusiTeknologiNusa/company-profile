@@ -95,3 +95,18 @@ body {
 .bord-10{
     border-radius: 10px;
 }
+
+.collapsible {
+    text-decoration: none;
+  }
+
+  .content {
+   text-decoration: none; 
+ }
+ .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .show{
+      text-decoration: none;
+  }
