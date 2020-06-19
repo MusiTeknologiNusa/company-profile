@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { decrementCounter, incrementCounter } from '~/modules/redux/actions/counterActions';
 import { fetchUsers } from '~/modules/redux/actions/usersActions';
 const Highlight = dynamic(() => import('~/components/Highlight/Highlight'));
-import Highlightpic from '~/assets/images/illustration1.png';
+import HLPic from '~/assets/images/highlightpic.png';
 const ServiceCard = dynamic(() => import('~/components/ServiceCard/ServiceCard'));
 
 import WebImage from '~/assets/images/web.png';
@@ -32,7 +32,8 @@ class App extends React.Component {
 		return (
 			<div>
 				<Navigation />
-				<Highlight image={Highlightpic}/>
+				<Highlight 
+						image={HLPic}/>
 				<Question />
 				<div className="flex flex-col sm:flex-row">
                     <ServiceCard
