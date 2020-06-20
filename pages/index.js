@@ -3,14 +3,18 @@ import dynamic from 'next/dynamic';
 import { connect } from 'react-redux';
 import { decrementCounter, incrementCounter } from '~/modules/redux/actions/counterActions';
 import { fetchUsers } from '~/modules/redux/actions/usersActions';
-const Highlight = dynamic(() => import('~/components/Highlight/Highlight'));
-import HLPic from '~/assets/images/highlightpic.png';
-const ServiceCard = dynamic(() => import('~/components/ServiceCard/ServiceCard'));
-
 import WebImage from '~/assets/images/web.png';
 import AppImage from '~/assets/images/aplikasi.png';
 import MultimediaImage from '~/assets/images/mult.png';
-
+import DescImage from '~/assets/images/describe.png';
+import HLPic from '~/assets/images/highlightpic.png';
+const Highlight = dynamic(() => import('~/components/Highlight/Highlight'));
+const ServiceCard = dynamic(() => import('~/components/ServiceCard/ServiceCard'));
+const Question = dynamic(() => import('~/components/Question/Question'));
+const Whymustus = dynamic(() => import('~/components/Whymustus/Whymustus'));
+const History = dynamic(() => import('~/components/History/History'));
+const ContactUs = dynamic(() => import('~/components/ContactUs/ContactUs'));
+const Footer = dynamic(() => import('~/components/Footer/Footer'));
 const API_URL = process.env.API_URL;
 
 class App extends React.Component {
@@ -31,9 +35,8 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<Navigation />
-				<Highlight 
-						image={HLPic}/>
+				<Navigation  />
+				<Highlight image={HLPic} />
 				<Question />
 				<div className="flex flex-col sm:flex-row">
                     <ServiceCard
@@ -52,7 +55,7 @@ class App extends React.Component {
                         height="192"
                         image={MultimediaImage}/>
                 </div>
-				<Whymustus />
+				<Whymustus image={DescImage}/>
 				<History />
 				<ContactUs />
 				<Footer />
@@ -105,148 +108,5 @@ function Navigation() {
 
 	);
 }
-
-
-function Question() {
-	return (
-		<div className="flex mb-4 ml-20 mr-20 md:ml-40">
-			<div className="w-full mt-32 ">
-				<h2 className="text-center sec-text">Apa yang Kami Kerjakan</h2>
-			</div>
-		</div>
-	);
-}
-
-function Jobs() {
-	return (
-		<div className="flex  flex-wrap lg:ml-40 lg:mr-40">
-			<div className="w-full  sm:w-1/3 bg-grey-100 p-4 ">
-				<center><img src="web.png" className="w-auto mt-10 lg:mt-0 "></img></center>
-				<p className="text-center fontjobs mt-5">Websites</p>
-			</div>
-			<div className="w-full sm:w-1/3 bg-grey-100 p-4 text-gray-200">
-				<center><img src="aplikasi.png" className="ml-8 mt-10 sm:ml-12 lg:mt-0"></img></center>
-				<p className="text-center fontjobs mt-5 md:mt-1 md:ml-24 lg:mt-10 lg:ml-0 ">Apps</p>
-			</div>
-			<div className="w-full sm:w-1/3 bg-grey-100 p-4 text-gray-200">
-				<center><img src="mult.png" className="ml-4 mt-10 sm:ml-12 lg:mt-0"></img></center>
-				<p className="text-center fontjobs ml-4 mt-5  md:ml-16 lg:mt-10 lg:ml-4">Multimedia</p>
-			</div>
-		</div>
-	);
-}
-
-
-
-function Whymustus() {
-	return (
-		<div className="flex  flex-wrap mt-8">
-			<div className="w-full sm:w-3/5  p-4  text-gray-200">
-				<img src="describe.png" className="lg:ml-40 md:ml-0 sm:mt-12"></img>
-			</div>
-			<div className="w-full text-center sm:w-2/5  p-4 sm:text-left  sm:mt-12 text-gray-700">
-				<h2 className="sec-text">Kenapa Anda Harus<br></br>Menggunakan Jasa Kami</h2>
-				<h4 className="fourth-text mt-5">Muten sangat peduli dengan Client kami yang <br></br> menginginkan fungisonal dan kualitas produk</h4>
-				<ul className="ml-12 mt-8 sm:ml-0 text-left">
-					<li className="mt-2">
-						<img className="inline" src="check.png"></img><span className="list-text ml-4">Profesional</span>
-					</li>
-					<li className="mt-2">
-						<img className="inline" src="check.png"></img><span className="list-text ml-4">Kompeten</span>
-					</li>
-					<li className="mt-2">
-						<img className="inline" src="check.png"></img><span className="list-text ml-4">Berkualitas</span>
-					</li>
-					<li className="mt-2">
-						<img className="inline" src="check.png"></img><span className="list-text ml-4">Terpercaya</span>
-					</li>
-				</ul>
-
-			</div>
-		</div>
-	);
-}
-
-function History() {
-	return (
-		<div className="container mx-auto">
-			<div className="mt-8">
-				<div className="flex mb-4 ml-20 mr-20">
-					<div className="w-full mt-16">
-						<h2 className="text-center sm:text-center sec-text text-muten">Apa yang Telah Kami <br></br> Kerjakan</h2>
-						<h2 className="text-center sm:text-center fourth-text mt-8">Ini adalah sebagian dari apa yang telah kami kerjakan dengan berbagai<br></br> macam bidang</h2>
-					</div>
-				</div>
-				<div className="px-2 ml-20 mr-20 mt-20">
-					<div className="flex -mx-2">
-						<div className="w-full sm:w-1/3 px-2">
-							<div className="bg-gray-100 h-40 rounded-md"></div>
-						</div>
-						<div className="sm:w-1/3 px-2">
-							<div className="bg-gray-100 h-40 rounded-md"></div>
-						</div>
-						<div className="sm:w-1/3 px-2">
-							<div className="bg-gray-100 h-40 rounded-md"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
-}
-
-
-function ContactUs() {
-	return (
-		<div className="flex  flex-wrap mt-8 lg:ml-40 lg:mr-40 lg:mt-40 md:ml-8 md:mr-8">
-			<div className="w-full md:w-3/5  p-4  bg-white text-gray-200 md:rounded-lg">
-				<h2 className=" sec-text text-center md:text-left">Hubungi Kami Segera<br></br>Untuk Kualitas</h2>
-				<h2 className="fourth-text mt-4 text-center md:text-left">Hubungi kami untuk menggunakan jasa kami</h2>
-			</div>
-			<div className="w-full text-center md:w-2/5 bg-white p-4 md:rounded-lg">
-				<button className=" hover:bg-red-700 text-white font-bold py-4 px-4 mt-10 primarybutton ">Hubungi Kami</button>
-
-			</div>
-
-		</div>
-
-	);
-}
-
-function Footer() {
-	return (
-		<div className="flex  flex-wrap mt-8  lg:mt-40 md:ml-8 md:mr-8">
-			<div className="w-full text-justify md:w-2/5 md:text-left p-4 text-gray-200">
-				<img src="/Logo.png" alt="" />
-				<p className="mt-6 mb-10 footer-text"><span style={{ fontWeight: 'bold', color: '#ab4693' }}>Muten</span> adalah tempat bagimu untuk <br /> mengembangkan usaha ke teknologi terkini</p>
-				<p className="mr-4 ml-2 footer-text" style={{ display: 'inline' }}>Icon</p>
-				<p className="mr-4 ml-2 footer-text" style={{ display: 'inline' }}>Icon</p>
-				<p className="mr-4 ml-2 footer-text" style={{ display: 'inline' }}>Icon</p>
-				<p className="mt-16 footer-text text-center sm:text-left">©2020MusiTeknologiNusa</p>
-
-			</div>
-			<div className="w-1/3 text-left md:w-1/5 p-4 ">
-				<p className="mb-5 " style={{ fontWeight: 'bold' }}>Layanan</p>
-				<a href="#" className="mb-5 footer-text block hover:text-black">Websites</a>
-				<a href="#" className="mb-5 footer-text block hover:text-black">Apps</a>
-				<a href="#" className="footer-text block hover:text-black">Multimedia</a>
-			</div>
-			<div className="w-1/3 text-left md:w-1/5  p-4 ">
-				<p className="mb-5" style={{ fontWeight: 'bold' }}>Engage</p>
-				<a href="#" className="mb-5 footer-text block hover:text-black">Muten ?</a>
-				<a href="#" className="mb-5 footer-text block hover:text-black" >FAQ</a>
-				<a href="#" className="mb-5 footer-text block hover:text-black">About Us</a>
-				<a href="#" className="mb-5 footer-text block hover:text-black">Privacy Policy</a>
-				<a href="#" className="mb-5 footer-text block hover:text-black">Terms of Service</a>
-			</div>
-			<div className="w-1/3 text-left md:w-1/5  p-4 ">
-				<p className="mb-5" style={{ fontWeight: 'bold' }}>Hubungi Kami</p>
-				<a href="a" className="mb-5 footer-text block hover:text-black">Email</a>
-				<a href="a" className="mb-5 footer-text block hover:text-black">Phone</a>
-			</div>
-		</div>
-	);
-}
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './service-card.module.css';
+
 
 export default function(props) {
     return (
