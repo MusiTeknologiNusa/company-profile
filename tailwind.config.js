@@ -1,5 +1,20 @@
 module.exports = {
-  purge: ['./pages/**/*.js'],
+  purge:{
+    content:[
+      './pages/**/*.js',
+      './pages/index.js',
+      './components/**/*.js'
+    ],
+    options:{
+      whitelist:[
+        'sm:flex-row-reverse',
+        'md:ml-20',
+        'text-primary',
+        'bg-gray-100',
+        'font-'
+      ]
+    }
+  },
   theme: {
     extend: {
       fontFamily: {
