@@ -7,9 +7,9 @@ import Navigation from '~/components/Navigation';
 
 const ServiceCard = dynamic(() => import('~/components/ServiceCard/ServiceCard'));
 
-import WebImage from '~/assets/images/web.png';
-import AppImage from '~/assets/images/aplikasi.png';
-import MultimediaImage from '~/assets/images/mult.png';
+import WebImage from '~/assets/images/home/web.png';
+import AppImage from '~/assets/images/home/aplikasi.png';
+import MultimediaImage from '~/assets/images/home/mult.png';
 
 class Service extends React.Component {
 
