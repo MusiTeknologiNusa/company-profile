@@ -11,7 +11,7 @@ import HLPic from '~/assets/images/highlightpic.png';
 const Highlight = dynamic(() => import('~/components/Highlight/Highlight'));
 const ServiceCard = dynamic(() => import('~/components/ServiceCard/ServiceCard'));
 const Question = dynamic(() => import('~/components/Question/Question'));
-const Whymustus = dynamic(() => import('~/components/Whymustus/Whymustus'));
+const WhyMustUs = dynamic(() => import('~/components/WhyMustUs/WhyMustUs'));
 const History = dynamic(() => import('~/components/History/History'));
 const ContactUs = dynamic(() => import('~/components/ContactUs/ContactUs'));
 const Footer = dynamic(() => import('~/components/Footer/Footer'));
@@ -55,7 +55,7 @@ class App extends React.Component {
                         height="192"
                         image={MultimediaImage}/>
                 </div>
-				<Whymustus image={DescImage}/>
+				<WhyMustUs image={DescImage}/>
 				<History />
 				<ContactUs />
 				<Footer />
