@@ -1,5 +1,5 @@
 import React from 'react';
-import checkImg from '~/assets/images/check.png';
+import checkImg from '~/assets/images/home/check.png';
 
 export default function(props) {
     const skills = ["Profesional","Kompeten","Berkualitas","Terpercaya"];
