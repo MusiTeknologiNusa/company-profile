@@ -1,11 +1,11 @@
 import React from 'react';
-
+import checkImg from '~/assets/images/check.png';
 
 export default function(props) {
-    const Keahlian = ["Profesional","Kompeten","Berkualitas","Terpercaya"];
-    const listKeahlian = Keahlian.map((itemKeahlian) => 
+    const skills = ["Profesional","Kompeten","Berkualitas","Terpercaya"];
+    const listOfSkill = skills.map((itemSkill) => 
     <li className="mt-2">
-        <img className="inline" src="check.png"></img><span className="list-text ml-4">{itemKeahlian}</span>
+        <img className="inline" src={checkImg}></img><span className="list-text ml-4">{itemSkill}</span>
     </li>
     );
     return (
@@ -18,7 +18,7 @@ export default function(props) {
 				<h4 className="fourth-text mt-5">Muten sangat peduli dengan Client kami yang <br></br> menginginkan fungisonal dan kualitas produk</h4>
 				<ul className="ml-12 mt-8 sm:ml-0 text-left">
 					<li>
-						{listKeahlian}
+						{listOfSkill}
 					</li>
 				</ul>
 

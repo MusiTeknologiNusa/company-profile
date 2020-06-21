@@ -1,5 +1,6 @@
 import React from 'react';
-
+import fbImg from '~/assets/images/facebook.svg';
+import igImg from '~/assets/images/instagram.svg';
 
 export default function(props) {
    
@@ -8,9 +9,8 @@ export default function(props) {
         <div className="w-full text-justify md:w-2/5 md:text-left p-4 text-gray-200">
             <img src="/Logo.png" alt="" />
             <p className="mt-6 mb-10 footer-text"><span style={{ fontWeight: 'bold', color: '#ab4693' }}>Muten</span> adalah tempat bagimu untuk <br /> mengembangkan usaha ke teknologi terkini</p>
-            <p className="mr-4 ml-2 footer-text" style={{ display: 'inline' }}>Icon</p>
-            <p className="mr-4 ml-2 footer-text" style={{ display: 'inline' }}>Icon</p>
-            <p className="mr-4 ml-2 footer-text" style={{ display: 'inline' }}>Icon</p>
+            <a href="#"><img src={fbImg} className="mr-4 ml-2 footer-text h-8 w-8" style={{ display: 'inline' }}/></a>
+            <a href="#"><img src={igImg} className="mr-4 ml-2 footer-text h-8 w-8" style={{ display: 'inline' }}/></a>
             <p className="mt-16 footer-text text-center sm:text-left">©2020MusiTeknologiNusa</p>
 
         </div>
