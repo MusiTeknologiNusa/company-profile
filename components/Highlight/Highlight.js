@@ -10,7 +10,7 @@ export default function(props){
                 <div className="w-full text-center sm:w-3/5  p-4 sm:text-left  text-gray-700">
                     <h1 className="main-text inline ml-0 md:ml-20">Solusi Kebutuhan<br></br> <span className="ml-0 md:ml-20">Teknologi dan Multimedia</span></h1>
                     <p className="mt-4 third-text md:ml-20">Jika anda ingin meningkatkan sistem produktiftas anda dengan <br></br>teknologi terkini, mungkin jasa <span className="purple">Muten</span> lah yang anda butuhkan</p>
-                    <button className=" hover:bg-red-700 text-white font-bold py-2 px-4 mt-10 primarybutton md:ml-20">Hubungi Kami</button>
+                    <button className=" hover:bg-green-500 text-white font-bold py-2 px-4 mt-10 primarybutton md:ml-20">Hubungi Kami</button>
                 </div>
             </div>
         );

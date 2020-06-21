@@ -10,7 +10,7 @@ export default function(props) {
             <h2 className="fourth-text mt-4 text-center md:text-left">Hubungi kami untuk menggunakan jasa kami</h2>
         </div>
         <div className="w-full text-center md:w-2/5 bg-white p-4 md:rounded-lg">
-            <button className=" hover:bg-red-700 text-white font-bold py-4 px-4 mt-10 primarybutton ">Hubungi Kami</button>
+            <button className=" hover:bg-green-500 text-white font-bold py-4 px-4 mt-10 primarybutton ">Hubungi Kami</button>
 
         </div>
 
