@@ -1,7 +1,8 @@
 import React from 'react';
 import checkImg from '~/assets/images/check.png';
+import PropTypes from 'prop-types';
 
-export default function(props) {
+const WhyMustUs = (props) => {
     const skills = ["Profesional","Kompeten","Berkualitas","Terpercaya"];
     const listOfSkill = skills.map((itemSkill) => 
     <li className="mt-2">
@@ -26,3 +27,13 @@ export default function(props) {
 		</div>
     );
 };
+
+WhyMustUs.propTypes = {
+  
+    image: PropTypes.oneOfType([
+          PropTypes.string, // to handle url based image
+          PropTypes.object // to handle object based image
+    ])
+};
+
+export default WhyMustUs;
