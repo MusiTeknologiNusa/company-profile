@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function(props){
+const Highlight = (props) => {
    
         return (
             <div className="flex sm:flex-row-reverse flex-wrap mt-8 ">
@@ -15,4 +16,14 @@ export default function(props){
             </div>
         );
     
-}
+};
+
+Highlight.propTypes = {
+  
+    image: PropTypes.oneOfType([
+          PropTypes.string, // to handle url based image
+          PropTypes.object // to handle object based image
+    ])
+};
+
+export default Highlight;
