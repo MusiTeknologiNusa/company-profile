@@ -15,7 +15,7 @@ export default function(props) {
 			</div>
 			<div className="w-full text-center sm:w-2/5  p-4 sm:text-left  sm:mt-12 text-gray-700">
 				<h2 className="sec-text">Kenapa Anda Harus<br></br>Menggunakan Jasa Kami</h2>
-				<h4 className="fourth-text mt-5">Muten sangat peduli dengan Client kami yang <br></br> menginginkan fungisonal dan kualitas produk</h4>
+				<h4 className="fourth-text mt-5">Muten sangat peduli dengan klien kami yang <br></br> menginginkan fungisonal dan kualitas produk</h4>
 				<ul className="ml-12 mt-8 sm:ml-0 text-left">
 					<li>
 						{listOfSkill}

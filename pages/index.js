@@ -40,12 +40,12 @@ class App extends React.Component {
 				<Question />
 				<div className="flex flex-col sm:flex-row">
                     <ServiceCard
-                        label="Website"
+                        label="Websites"
                         width="263"
                         height="192"
                         image={WebImage}/>
                     <ServiceCard
-                        label="Aplikasi"
+                        label="Apps"
                         width="263"
                         height="192"
                         image={AppImage}/>
@@ -96,7 +96,7 @@ function Navigation() {
 						Layanan
                 </a>
 					<a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 navbar-text text-muten hover:text-black lg:ml-4">
-						Pekerjaan
+						Proyek
                 </a>
 					<a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 navbar-text text-muten hover:text-black lg:ml-4">
 						Tentang Kami
