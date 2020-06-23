@@ -5,15 +5,18 @@
 @font-face {
     font-family: Rubik-Regular;
     src: url(Rubik-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Rubik-Medium;
     src: url(Rubik-Medium.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: Rubik-Bold;
     src: url(Rubik-Bold.ttf);
+    font-display: swap;
 }
 
 body {
