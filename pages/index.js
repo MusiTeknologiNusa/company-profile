@@ -3,11 +3,12 @@ import dynamic from 'next/dynamic';
 import { connect } from 'react-redux';
 import { decrementCounter, incrementCounter } from '~/modules/redux/actions/counterActions';
 import { fetchUsers } from '~/modules/redux/actions/usersActions';
-import WebImage from '~/assets/images/web.png';
-import AppImage from '~/assets/images/aplikasi.png';
-import MultimediaImage from '~/assets/images/mult.png';
-import DescImage from '~/assets/images/describe.png';
-import HLPic from '~/assets/images/highlightpic.png';
+import WebImage from '~/assets/images/home/web.png';
+import AppImage from '~/assets/images/home/aplikasi.png';
+import MultimediaImage from '~/assets/images/home/mult.png';
+import DescImage from '~/assets/images/home/describe.png';
+import HLPic from '~/assets/images/home/highlightpic.png';
+import logo from '~/assets/images/Header/Logo.png';
 const Highlight = dynamic(() => import('~/components/Highlight/Highlight'));
 const ServiceCard = dynamic(() => import('~/components/ServiceCard/ServiceCard'));
 const Question = dynamic(() => import('~/components/Question/Question'));
@@ -80,7 +81,7 @@ function Navigation() {
 	return (
 		<nav className="flex items-center justify-between flex-wrap  p-6">
 			<div className="md:ml-24 flex items-center flex-shrink-0 text-white mr-6">
-				<img src="Logo.png" />
+				<img src={logo} />
 			</div>
 			<div className="block lg:hidden">
 				<button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">

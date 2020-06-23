@@ -1,6 +1,6 @@
 import React from 'react';
-import fbImg from '~/assets/images/facebook.svg';
-import igImg from '~/assets/images/instagram.svg';
+import fbImg from '~/assets/images/Footer/facebook.svg';
+import igImg from '~/assets/images/Footer/instagram.svg';
 
 export default function(props) {
    

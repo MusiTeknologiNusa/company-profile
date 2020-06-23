@@ -1,6 +1,8 @@
 import React from 'react';
-import checkImg from '~/assets/images/check.png';
+
+import checkImg from '~/assets/images/home/check.png';
 import PropTypes from 'prop-types';
+
 
 const WhyMustUs = (props) => {
     const skills = ["Profesional","Kompeten","Berkualitas","Terpercaya"];
