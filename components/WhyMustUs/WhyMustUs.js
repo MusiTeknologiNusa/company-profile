@@ -1,7 +1,10 @@
 import React from 'react';
-import checkImg from '~/assets/images/home/check.png';
 
-export default function(props) {
+import checkImg from '~/assets/images/home/check.png';
+import PropTypes from 'prop-types';
+
+
+const WhyMustUs = (props) => {
     const skills = ["Profesional","Kompeten","Berkualitas","Terpercaya"];
     const listOfSkill = skills.map((itemSkill) => 
     <li className="mt-2">
@@ -15,7 +18,7 @@ export default function(props) {
 			</div>
 			<div className="w-full text-center sm:w-2/5  p-4 sm:text-left  sm:mt-12 text-gray-700">
 				<h2 className="sec-text">Kenapa Anda Harus<br></br>Menggunakan Jasa Kami</h2>
-				<h4 className="fourth-text mt-5">Muten sangat peduli dengan Client kami yang <br></br> menginginkan fungisonal dan kualitas produk</h4>
+				<h4 className="fourth-text mt-5">Muten sangat peduli dengan klien kami yang <br></br> menginginkan fungisonal dan kualitas produk</h4>
 				<ul className="ml-12 mt-8 sm:ml-0 text-left">
 					<li>
 						{listOfSkill}
@@ -26,3 +29,13 @@ export default function(props) {
 		</div>
     );
 };
+
+WhyMustUs.propTypes = {
+  
+    image: PropTypes.oneOfType([
+          PropTypes.string, // to handle url based image
+          PropTypes.object // to handle object based image
+    ])
+};
+
+export default WhyMustUs;

@@ -30,8 +30,8 @@ export default function(props) {
         </div>
         <div className="w-1/3 text-left md:w-1/5  p-4 ">
             <p className="mb-5" style={{ fontWeight: 'bold' }}>Hubungi Kami</p>
-            <a href="a" className="mb-5 footer-text block hover:text-black">Email</a>
-            <a href="a" className="mb-5 footer-text block hover:text-black">Phone</a>
+            <a href="#" className="mb-5 footer-text block hover:text-black">Email</a>
+            <a href="#" className="mb-5 footer-text block hover:text-black">Phone</a>
         </div>
     </div>
     );
