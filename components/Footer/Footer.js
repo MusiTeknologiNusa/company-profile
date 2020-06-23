@@ -3,6 +3,9 @@ import fbImg from '~/assets/images/Footer/facebook.svg';
 import igImg from '~/assets/images/Footer/instagram.svg';
 
 export default function(props) {
+    const style = {
+        pointerEvents: 'none'
+    }
    
     return (
         <div className="flex  flex-wrap mt-8  lg:mt-40 md:ml-8 md:mr-8">
@@ -30,8 +33,8 @@ export default function(props) {
         </div>
         <div className="w-1/3 text-left md:w-1/5  p-4 ">
             <p className="mb-5" style={{ fontWeight: 'bold' }}>Hubungi Kami</p>
-            <a href="#" className="mb-5 footer-text block hover:text-black">Email</a>
-            <a href="#" className="mb-5 footer-text block hover:text-black">Phone</a>
+            <a href="#" className="mb-5 footer-text block hover:text-black" style={style}>Email: kontak.muten@gmail.com</a>
+            <a href="a" className="mb-5 footer-text block hover:text-black" style={style}>Phone: -</a>
         </div>
     </div>
     );
