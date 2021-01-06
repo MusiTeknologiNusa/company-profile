@@ -15,7 +15,7 @@
     "deploy:prod": "yarn build && cross-env NODE_ENV=production node ssr-server.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "firebase": "^7.14.5",
     "next": "^9.1.7",
